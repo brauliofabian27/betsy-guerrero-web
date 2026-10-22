@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Betsy Guerrero | Fotografía Emocional & Familiar</title>
+  <meta name="description" content="Estudio de fotografía por Betsy Guerrero. Sesiones de maternidad, newborn, cake smash y retratos familiares en Lima, Perú.">
+  
+  <!-- Tipografías elegantes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS por CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Cinzel', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            arena: {
+              50: '#FDFBF7',
+              100: '#F7F3EA',
+              200: '#EFE7D8',
+              800: '#4A4036',
+              900: '#2A241E',
+            },
+            terracota: {
+              DEFAULT: '#C17C5F',
+              hover: '#A9684C'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .bg-grain {
+      background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+  </style>
+</head>
+<body class="bg-arena-50 text-arena-900 font-sans antialiased selection:bg-terracota selection:text-white">
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <header class="fixed top-0 left-0 w-full bg-arena-50/90 backdrop-blur-md z-50 border-b border-arena-200/60 transition-all">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="font-serif tracking-widest text-lg sm:text-xl font-bold uppercase text-arena-900">
+        Betsy Guerrero<span class="text-terracota">.</span>
+      </a>
+
+      <!-- Menú Escritorio -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+        <a href="#galeria" class="hover:text-terracota transition-colors">Portafolio</a>
+        <a href="#cotizador" class="hover:text-terracota transition-colors">Cotizar Sesión</a>
+        <a href="#nosotros" class="hover:text-terracota transition-colors">Sobre Mí</a>
+        <a href="#faq" class="hover:text-terracota transition-colors">Preguntas Frecuentes</a>
+      </nav>
+
+      <a href="#cotizador" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-arena-900 text-arena-50 hover:bg-terracota transition-all shadow-sm">
+        Agendar Sesión
+      </a>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- HERO SECTION -->
+    <section class="relative min-h-[85vh] flex items-center justify-center px-6 bg-grain overflow-hidden">
+      <div class="max-w-4xl mx-auto text-center py-16">
+        <span class="inline-block px-4 py-1.5 rounded-full bg-arena-200/70 text-arena-800 text-xs font-semibold tracking-widest uppercase mb-6">
+          Fotografía de Momentos Únicos
+        </span>
+        <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold leading-tight tracking-tight text-arena-900 mb-6">
+          Los instantes fugaces <br>
+          <span class="italic font-light text-terracota">se vuelven eternos.</span>
+        </h1>
+        <p class="max-w-2xl mx-auto text-arena-800/80 text-base sm:text-lg mb-10 leading-relaxed font-light">
+          Soy Betsy Guerrero. Capturo la complicidad familiar, la magia de la dulce espera y los primeros años de vida con un estilo cálido, natural y atemporal.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#cotizador" class="w-full sm:w-auto px-8 py-3.5 bg-terracota hover:bg-terracota-hover text-white rounded-full font-medium text-sm transition-all shadow-md">
+            Calcular Mi Sesión
+          </a>
+          <a href="#galeria" class="w-full sm:w-auto px-8 py-3.5 bg-arena-100 hover:bg-arena-200 text-arena-900 rounded-full font-medium text-sm transition-all border border-arena-200">
+            Ver Portafolio
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA DE CATEGORÍAS -->
+    <section id="galeria" class="py-24 max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-terracota text-xs font-semibold uppercase tracking-widest">Portafolio</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2">Historias Hechas Fotografía</h2>
+        </div>
+        <p class="text-arena-800/70 max-w-md text-sm mt-4 md:mt-0">
+          Iluminación cuidada, delicadeza en el trato y un ambiente tranquilo para que tu familia disfrute cada toma.
+        </p>
+      </div>
+
+      <!-- Cuadrícula Asimétrica -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Maternidad -->
+        <div class="group relative h-96 rounded-2xl overflow-hidden shadow-sm">
+          <img src="https://images.unsplash.com/photo-1544126592-807ade215a0b?auto=format&fit=crop&w=900&q=80" alt="Maternidad" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-arena-900/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+            <span class="text-xs uppercase tracking-wider text-terracota font-bold">Dulce Espera</span>
+            <h3 class="font-serif text-xl font-semibold">Maternidad & Amor</h3>
+          </div>
+        </div>
+
+        <!-- Newborn -->
+        <div class="group relative h-96 rounded-2xl overflow-hidden shadow-sm">
+          <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=900&q=80" alt="Newborn" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-arena-900/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+            <span class="text-xs uppercase tracking-wider text-terracota font-bold">Primeros Días</span>
+            <h3 class="font-serif text-xl font-semibold">Newborn & Bebés</h3>
+          </div>
+        </div>
+
+        <!-- Cake Smash / Infantil -->
+        <div class="group relative h-96 rounded-2xl overflow-hidden shadow-sm">
+          <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=900&q=80" alt="Cake Smash" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-arena-900/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+            <span class="text-xs uppercase tracking-wider text-terracota font-bold">Celebraciones</span>
+            <h3 class="font-serif text-xl font-semibold">Cake Smash & Infantil</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COTIZADOR DIRECTO A WHATSAPP -->
+    <section id="cotizador" class="py-24 bg-arena-100/70 border-y border-arena-200/80">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center max-w-xl mx-auto mb-16">
+          <span class="text-terracota text-xs font-semibold uppercase tracking-widest">Cotizador Interactivo</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2">Personaliza tu Sesión</h2>
+          <p class="text-arena-800/70 text-sm mt-3">Elige tu sesión y envíame la consulta directamente a WhatsApp con el presupuesto ya calculado.</p>
+        </div>
+
+        <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-arena-200 grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div class="space-y-6">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-arena-800 mb-2">1. Selecciona el Tipo de Sesión</label>
+              <!-- Puedes cambiar los valores de data-precio según tus tarifas reales -->
+              <select id="tipo-sesion" class="w-full bg-arena-50 border border-arena-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-terracota">
+                <option value="Maternidad" data-precio="450">Maternidad / Dulce Espera (S/ 450)</option>
+                <option value="Cake Smash" data-precio="500">Cake Smash / Cumpleaños (S/ 500)</option>
+                <option value="Familiar" data-precio="400">Sesión Familiar / Retrato (S/ 400)</option>
+                <option value="Newborn" data-precio="600">Newborn Especializado (S/ 600)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-arena-800 mb-2">2. Locación</label>
+              <div class="grid grid-cols-2 gap-3">
+                <label class="flex items-center gap-2 p-3 bg-arena-50 border border-arena-200 rounded-xl cursor-pointer hover:border-terracota transition-all">
+                  <input type="radio" name="locacion" value="Estudio" checked class="text-terracota focus:ring-terracota">
+                  <span class="text-sm font-medium">Estudio</span>
+                </label>
+                <label class="flex items-center gap-2 p-3 bg-arena-50 border border-arena-200 rounded-xl cursor-pointer hover:border-terracota transition-all">
+                  <input type="radio" name="locacion" value="Exteriores" class="text-terracota focus:ring-terracota">
+                  <span class="text-sm font-medium">Exteriores (+S/ 80)</span>
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-arena-800 mb-2">3. Opciones Extras</label>
+              <div class="space-y-2">
+                <label class="flex items-center justify-between p-3 bg-arena-50 border border-arena-200 rounded-xl cursor-pointer">
+                  <span class="text-sm">Álbum impreso Fine Art</span>
+                  <input type="checkbox" id="extra-album" data-costo="150" class="w-4 h-4 text-terracota rounded focus:ring-terracota">
+                </label>
+                <label class="flex items-center justify-between p-3 bg-arena-50 border border-arena-200 rounded-xl cursor-pointer">
+                  <span class="text-sm">Maquillaje & Peinado profesional</span>
+                  <input type="checkbox" id="extra-makeup" data-costo="120" class="w-4 h-4 text-terracota rounded focus:ring-terracota">
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resumen y Botón de WhatsApp -->
+          <div class="bg-arena-50 rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-arena-200/80">
+            <div>
+              <h3 class="font-serif text-lg font-bold text-arena-900 border-b border-arena-200 pb-3">Detalle Estimado</h3>
+              <ul class="text-sm text-arena-800/80 space-y-3 mt-4">
+                <li class="flex justify-between"><span>Sesión:</span> <span id="res-sesion" class="font-semibold text-arena-900">Maternidad</span></li>
+                <li class="flex justify-between"><span>Locación:</span> <span id="res-locacion" class="font-semibold text-arena-900">Estudio</span></li>
+                <li class="flex justify-between"><span>Entrega:</span> <span class="font-semibold text-arena-900">Galería privada en alta resolución</span></li>
+              </ul>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-arena-200">
+              <div class="flex items-baseline justify-between mb-6">
+                <span class="text-sm text-arena-800 font-medium">Inversión Estimada:</span>
+                <span id="precio-total" class="font-serif text-3xl font-bold text-terracota">S/ 450</span>
+              </div>
+              <button id="btn-whatsapp" class="w-full py-3.5 bg-[#25D366] hover:bg-[#20ba59] text-white font-semibold rounded-xl text-sm transition-all flex items-center justify-center gap-2 shadow-sm">
+                <!-- Icono WhatsApp -->
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                Hablar con Betsy por WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE BETSY GUERRERO -->
+    <section id="nosotros" class="py-24 max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=900&q=80" alt="Betsy Guerrero Fotógrafa" class="rounded-3xl shadow-lg w-full object-cover aspect-4/5">
+          <div class="absolute -bottom-6 -right-6 bg-arena-100 p-6 rounded-2xl border border-arena-200 hidden sm:block">
+            <p class="font-serif text-2xl font-bold text-terracota">Betsy Guerrero</p>
+            <p class="text-xs text-arena-800">Fotógrafa de familias & retratos</p>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <span class="text-terracota text-xs font-semibold uppercase tracking-widest">Sobre Mí</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-arena-900 leading-snug">
+            Fotografías hechas con el corazón y paciencia.
+          </h2>
+          <p class="text-arena-800/80 text-sm sm:text-base leading-relaxed">
+            Hola, soy Betsy Guerrero. Mi propósito detrás de la cámara es que disfrutes la sesión tanto como el resultado final. No busco poses incómodas ni momentos artificiales; me concentro en la naturalidad, la risa sincera y la tranquilidad de los tuyos.
+          </p>
+          <p class="text-arena-800/80 text-sm sm:text-base leading-relaxed">
+            Cada sesión incluye una orientación previa de vestuario y estilo para que llegues al estudio sintiéndote en confianza total.
+          </p>
+          <div class="pt-4 flex gap-8 border-t border-arena-200">
+            <div>
+              <p class="font-serif text-xl font-bold text-arena-900">Atención Cálida</p>
+              <p class="text-xs text-arena-800/70 mt-1">Sesiones a tu propio ritmo.</p>
+            </div>
+            <div>
+              <p class="font-serif text-xl font-bold text-arena-900">Calidad Fine Art</p>
+              <p class="text-xs text-arena-800/70 mt-1">Edición cuidada al detalle.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-24 bg-arena-100/50 border-t border-arena-200">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <span class="text-terracota text-xs font-semibold uppercase tracking-widest">Dudas Frecuentes</span>
+          <h2 class="font-serif text-3xl font-bold mt-2">Preguntas Habituales</h2>
+        </div>
+        <div class="space-y-4">
+          <details class="group bg-white p-6 rounded-2xl border border-arena-200 cursor-pointer">
+            <summary class="flex justify-between items-center font-medium text-arena-900">
+              ¿Con cuánta anticipación debo reservar mi sesión?
+              <span class="transition group-open:rotate-180">↓</span>
+            </summary>
+            <p class="text-arena-800/70 text-sm mt-4 leading-relaxed">
+              Lo ideal es coordinar con 2 a 3 semanas de anticipación. Para sesiones de maternidad, te sugiero programar entre las semanas 28 y 34 de tu embarazo.
+            </p>
+          </details>
+
+          <details class="group bg-white p-6 rounded-2xl border border-arena-200 cursor-pointer">
+            <summary class="flex justify-between items-center font-medium text-arena-900">
+              ¿Cómo recibiré mis fotografías?
+              <span class="transition group-open:rotate-180">↓</span>
+            </summary>
+            <p class="text-arena-800/70 text-sm mt-4 leading-relaxed">
+              Te enviaré un enlace a una galería digital privada en alta calidad para que descargues tus recuerdos cómodamente desde tu computadora o celular.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA CON REDES SOCIALES OFICIALES -->
+  <footer class="bg-arena-900 text-arena-100 py-16">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div>
+        <span class="font-serif text-xl font-bold tracking-widest uppercase">Betsy Guerrero<span class="text-terracota">.</span></span>
+        <p class="text-arena-200/60 text-xs mt-3 leading-relaxed">
+          Fotografía profesional de familia, maternidad e infancia. Capturando recuerdos inolvidables en Lima, Perú.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-terracota mb-3">Contacto Directo</h4>
+        <p class="text-sm text-arena-200/80">WhatsApp: <a href="https://wa.me/51922446862" target="_blank" class="hover:text-white underline">+51 922 446 862</a></p>
+        <p class="text-sm text-arena-200/80 mt-1">Ubicación: Lima, Perú</p>
+      </div>
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-terracota mb-3">Sígueme en Redes</h4>
+        <div class="space-y-2 text-sm text-arena-200/80">
+          <p>
+            <a href="https://www.instagram.com/betsyguerrero_fotografia" target="_blank" rel="noopener noreferrer" class="hover:text-white transition flex items-center gap-2">
+              <span>Instagram:</span> <span class="font-medium text-white">@betsyguerrero_fotografia</span>
+            </a>
+          </p>
+          <p>
+            <a href="https://www.tiktok.com/@betsyguerrero_fotografia" target="_blank" rel="noopener noreferrer" class="hover:text-white transition flex items-center gap-2">
+              <span>TikTok:</span> <span class="font-medium text-white">Betsy Guerrero | Fotografía</span>
+            </a>
+          </p>
+          <p>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition flex items-center gap-2">
+              <span>Facebook:</span> <span class="font-medium text-white">Betsy Guerrero fotografa</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-arena-800 text-xs text-arena-200/50 flex flex-col sm:flex-row justify-between gap-4">
+      <p>© 2026 Betsy Guerrero Fotografía. Todos los derechos reservados.</p>
+      <div class="flex gap-4">
+        <a href="https://www.instagram.com/betsyguerrero_fotografia" target="_blank" class="hover:text-white transition">Instagram</a>
+        <a href="https://www.tiktok.com" target="_blank" class="hover:text-white transition">TikTok</a>
+        <a href="https://www.facebook.com" target="_blank" class="hover:text-white transition">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LÓGICA DE COTIZACIÓN Y CONEXIÓN CON WHATSAPP -->
+  <script>
+    const selectSesion = document.getElementById('tipo-sesion');
+    const radioLocacion = document.getElementsByName('locacion');
+    const checkAlbum = document.getElementById('extra-album');
+    const checkMakeup = document.getElementById('extra-makeup');
+
+    const resSesion = document.getElementById('res-sesion');
+    const resLocacion = document.getElementById('res-locacion');
+    const precioTotal = document.getElementById('precio-total');
+    const btnWhatsapp = document.getElementById('btn-whatsapp');
+
+    // Número configurado con el teléfono proporcionado
+    const WHATSAPP_BETSY = "51922446862"; 
+
+    function recalcularPresupuesto() {
+      const opcionSesion = selectSesion.options[selectSesion.selectedIndex];
+      let total = parseInt(opcionSesion.dataset.precio);
+      let nombreSesion = opcionSesion.text.split('(')[0].trim();
+
+      let locacionSeleccionada = "Estudio";
+      for (const radio of radioLocacion) {
+        if (radio.checked) {
+          locacionSeleccionada = radio.value;
+          if (radio.value === "Exteriores") {
+            total += 80;
+          }
+        }
+      }
+
+      let extrasTexto = [];
+      if (checkAlbum.checked) {
+        total += parseInt(checkAlbum.dataset.costo);
+        extrasTexto.push("Álbum Fine Art");
+      }
+      if (checkMakeup.checked) {
+        total += parseInt(checkMakeup.dataset.costo);
+        extrasTexto.push("Maquillaje/Peinado");
+      }
+
+      resSesion.textContent = nombreSesion;
+      resLocacion.textContent = locacionSeleccionada;
+      precioTotal.textContent = `S/ ${total}`;
+
+      // Formato automático de mensaje de WhatsApp
+      let mensaje = `¡Hola Betsy! 👋 Estuve viendo tu página web y me gustaría consultar disponibilidad:%0A%0A` +
+                    `📷 *Sesión:* ${nombreSesion}%0A` +
+                    `📍 *Locación:* ${locacionSeleccionada}%0A` +
+                    `✨ *Adicionales:* ${extrasTexto.length > 0 ? extrasTexto.join(', ') : 'Ninguno'}%0A` +
+                    `💰 *Presupuesto Estimado:* S/ ${total}%0A%0A` +
+                    `¿Qué fechas tienes disponibles próximamente?`;
+
+      btnWhatsapp.onclick = () => {
+        window.open(`https://wa.me/${WHATSAPP_BETSY}?text=${mensaje}`, '_blank');
+      };
+    }
+
+    selectSesion.addEventListener('change', recalcularPresupuesto);
+    radioLocacion.forEach(r => r.addEventListener('change', recalcularPresupuesto));
+    checkAlbum.addEventListener('change', recalcularPresupuesto);
+    checkMakeup.addEventListener('change', recalcularPresupuesto);
+
+    // Ejecución inicial
+    recalcularPresupuesto();
+  </script>
+</body>
+</html>
